@@ -2,3 +2,5 @@ node_modules/
 public/dist/
 .idea/workspace.xml
 src/playground
+.env.test
+.env.development
