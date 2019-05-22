@@ -8,7 +8,7 @@
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
-    "test": "cross-env NODE_ENV=test jest --config=jest.config.json",
+    "test": "firebase --project expensify-test-9b182 firestore:delete --all-collections -y & cross-env NODE_ENV=test jest --config=jest.config.json",
     "start": "node server/server.js",
     "heroku-postbuild": "yarn run build:prod"
   },
@@ -52,6 +52,7 @@
     "enzyme": "3.0.0",
     "enzyme-adapter-react-16": "1.0.0",
     "enzyme-to-json": "3.0.1",
+    "firebase-tools": "^6.10.0",
     "jest": "^24.8.0",
     "react-test-renderer": "^16.8.6",
     "webpack-dev-server": "2.5.1"
