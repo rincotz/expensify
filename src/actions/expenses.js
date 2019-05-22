@@ -44,6 +44,14 @@ export const removeExpense = ({ id } = {}) => ({
   id
 });
 
+export const startRemoveExpense = ({ id } = {}) => {
+    return (dispatch) => {
+        return db.collection('expenses').doc(id).delete().then(() => {
+            dispatch(removeExpense({ id }))
+            })
+    }
+}
+
 // EDIT_EXPENSE
 export const editExpense = (id, updates) => ({
   type: 'EDIT_EXPENSE',

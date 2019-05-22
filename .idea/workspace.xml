@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83ed14f0-0953-447c-b20a-dcbd1fafd210" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.firebaserc" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firebase.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actions/expenses.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/expenses.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/expenses.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/expenses.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EditExpensePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EditExpensePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/Components/EditExpensePage.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/Components/EditExpensePage.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tests/actions/expenses.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/actions/expenses.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/reducers/expenses.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/reducers/expenses.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/public/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -28,8 +23,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/actions/expenses.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="64" column="35" selection-start-line="64" selection-start-column="35" selection-end-line="64" selection-end-column="35" />
+            <state relative-caret-position="179">
+              <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="46" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -38,10 +33,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/tests/Components/EditExpensePage.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="29" column="2" lean-forward="true" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tests/actions/expenses.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+            <state relative-caret-position="1836">
+              <caret line="108" column="18" selection-start-line="108" selection-start-column="18" selection-end-line="108" selection-end-column="18" />
               <folding>
                 <element signature="e#0#49#0" expanded="true" />
               </folding>
@@ -80,8 +87,6 @@
         <option value="$PROJECT_DIR$/__mocks__/moment.js" />
         <option value="$PROJECT_DIR$/.babelrc" />
         <option value="$PROJECT_DIR$/src/tests/Components/ExpenseForm.test.js" />
-        <option value="$PROJECT_DIR$/src/tests/Components/EditExpensePage.test.js" />
-        <option value="$PROJECT_DIR$/src/components/EditExpensePage.js" />
         <option value="$PROJECT_DIR$/src/tests/fixtures/filters.js" />
         <option value="$PROJECT_DIR$/src/components/ExpenseListFilters.js" />
         <option value="$PROJECT_DIR$/src/tests/Components/ExpenseListFilters.test.js" />
@@ -116,6 +121,8 @@
         <option value="$PROJECT_DIR$/src/app.js" />
         <option value="$PROJECT_DIR$/src/actions/expenses.js" />
         <option value="$PROJECT_DIR$/src/tests/actions/expenses.test.js" />
+        <option value="$PROJECT_DIR$/src/components/EditExpensePage.js" />
+        <option value="$PROJECT_DIR$/src/tests/Components/EditExpensePage.test.js" />
       </list>
     </option>
   </component>
@@ -367,7 +374,8 @@
       <workItem from="1557863366390" duration="23607000" />
       <workItem from="1558020040674" duration="11628000" />
       <workItem from="1558303389225" duration="112000" />
-      <workItem from="1558303649370" duration="36827000" />
+      <workItem from="1558303649370" duration="41486000" />
+      <workItem from="1558538190641" duration="530000" />
     </task>
     <servers />
   </component>
@@ -404,7 +412,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="207991000" />
+    <option name="totallyTimeSpent" value="213180000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -421,9 +429,9 @@
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" weight="0.20333838" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.20333838" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49925596" weight="0.32087228" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49925596" visible="true" weight="0.32087228" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.50074404" side_tool="true" weight="0.3271028" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.32866043" />
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
@@ -485,16 +493,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/Components/EditExpensePage.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="34" column="63" lean-forward="true" selection-start-line="34" selection-start-column="63" selection-end-line="34" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -678,18 +676,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/404.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/404.html" />
     <entry file="file://$PROJECT_DIR$/yarn.lock">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/firebase/firebase.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -708,22 +697,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.firebaserc">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/firestore.rules">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/firestore.indexes.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/firebase.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/.firebaserc" />
+    <entry file="file://$PROJECT_DIR$/firestore.rules" />
+    <entry file="file://$PROJECT_DIR$/firestore.indexes.json" />
+    <entry file="file://$PROJECT_DIR$/firebase.json" />
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -834,29 +811,49 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/actions/expenses.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1836">
+          <caret line="108" column="18" selection-start-line="108" selection-start-column="18" selection-end-line="108" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/EditExpensePage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />
+        <state relative-caret-position="-37">
+          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/expenses.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="64" column="35" selection-start-line="64" selection-start-column="35" selection-end-line="64" selection-end-column="35" />
+        <state relative-caret-position="179">
+          <caret line="46" column="35" selection-start-line="46" selection-start-column="35" selection-end-line="46" selection-end-column="46" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tests/actions/expenses.test.js">
+    <entry file="file://$PROJECT_DIR$/src/tests/Components/EditExpensePage.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        <state relative-caret-position="238">
+          <caret line="29" column="2" lean-forward="true" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
           <folding>
-            <element signature="e#0#49#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
