@@ -1,4 +1,5 @@
 import * as firebase from 'firebase/app'
+import * as auth from 'firebase/auth'
 import 'firebase/firestore'
 
 // Your web app's Firebase configuration
@@ -17,7 +18,7 @@ firebase.initializeApp(firebaseConfig);
 
 const db = firebase.firestore()
 
-export { firebase, db as default }
+export { firebase, auth, db as default }
 
 // db.collection('user').add({
 //     name: 'felipe',

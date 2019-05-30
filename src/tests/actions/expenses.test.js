@@ -14,8 +14,6 @@ import db from '../../firebase/firebase'
 
 const createMockStore = configureMockStore([thunk])
 
-let store
-
 beforeEach((done) => {
     const expensesData = {}
     expenses.forEach(({ id, description, note, amount, createdAt }) => {
