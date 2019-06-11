@@ -18,7 +18,8 @@ export const addExpense = (expense) => ({
 });
 
 export const startAddExpense = (expenseData = {}) => {
-    return (dispatch) => {
+    return (dispatch, getState) => {
+        const uid = getState().auth.uid
         const {
             description = '',
             note = '',
@@ -27,7 +28,7 @@ export const startAddExpense = (expenseData = {}) => {
         } = expenseData
         const expense = { description, note, amount, createdAt }
 
-        return db.collection('expenses')
+        return db.collection('users').doc(uid).collection('expenses')
             .add(expense)
             .then((docRef) => {
                 dispatch(addExpense({
@@ -45,8 +46,9 @@ export const removeExpense = ({ id } = {}) => ({
 });
 
 export const startRemoveExpense = ({ id } = {}) => {
-    return (dispatch) => {
-        return db.collection('expenses').doc(id).delete().then(() => {
+    return (dispatch, getState) => {
+        const uid = getState().auth.uid
+        return db.collection('users').doc(uid).collection('expenses').doc(id).delete().then(() => {
             dispatch(removeExpense({ id }))
             })
     }
@@ -60,8 +62,9 @@ export const editExpense = (id, updates) => ({
 });
 
 export const startEditExpense = (id, updates) => {
-    return (dispatch) => {
-        return db.collection('expenses').doc(id).update(updates)
+    return (dispatch, getState) => {
+        const uid = getState().auth.uid
+        return db.collection('users').doc(uid).collection('expenses').doc(id).update(updates)
             .then(() => {
                 dispatch(editExpense(id, updates))
             })
@@ -75,8 +78,9 @@ export const setExpenses = (expenses) => ({
 })
 
 export const startSetExpenses = () => {
-    return (dispatch) => {
-        return db.collection('expenses')
+    return (dispatch, getState) => {
+        const uid = getState().auth.uid
+        return db.collection('users').doc(uid).collection('expenses')
             .get()
             .then((querySnapshot) => {
                 const expenses = []

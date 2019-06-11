@@ -16,9 +16,11 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
+firebase.auth().languageCode = 'pt'
+const googleAuthProvider = new firebase.auth.GoogleAuthProvider()
 const db = firebase.firestore()
 
-export { firebase, auth, db as default }
+export { firebase, auth, googleAuthProvider, db as default }
 
 // db.collection('user').add({
 //     name: 'felipe',

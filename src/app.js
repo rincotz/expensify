@@ -18,11 +18,15 @@ const jsx = (
     </Provider>
 )
 
-let hasRendered = false
-
+let hasRendered = false;
 export const renderApp = () => {
-    ReactDOM.render(jsx, document.getElementById('app'))
-}
+    if (!hasRendered) {
+        ReactDOM.render(jsx, document.getElementById('app'));
+        hasRendered = true;
+    }
+};
+
+ReactDOM.render(<p>Loading...</p>, document.getElementById('app'));
 
 firebase.auth().onAuthStateChanged((user) => {
     if (user) {
@@ -40,5 +44,3 @@ firebase.auth().onAuthStateChanged((user) => {
         history.push('/')
     }
 })
-
-ReactDOM.render(<p>Loading...</p>, document.getElementById('app'));
